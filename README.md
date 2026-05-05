@@ -7,6 +7,7 @@ items among a group. Built with Python + Tkinter. No database — just CSV + JSO
 ◈ SPAYLATER
   Manager
 ```
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/288bba02-1936-4508-b3a6-b8ad7f34f0a3" />
 
 ---
 
