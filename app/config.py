@@ -3,10 +3,17 @@ config.py — Application-wide constants and defaults.
 All magic strings/numbers live here; change here, change everywhere.
 """
 
+import sys
 from pathlib import Path
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-BASE_DIR   = Path(__file__).resolve().parent.parent
+if getattr(sys, "frozen", False):
+    # Running as EXE — save data next to the .exe file
+    BASE_DIR = Path(sys.executable).parent
+else:
+    # Running as normal Python script
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
 DATA_DIR   = BASE_DIR / "data"
 REPORT_DIR = DATA_DIR / "reports"
 STATE_FILE = DATA_DIR / "state.json"
