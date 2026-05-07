@@ -2,7 +2,7 @@
 
 A lightweight desktop application for tracking shared "spaylater" (buy-now-pay-later)
 items among a group. Built with Python + Tkinter. No database — just CSV + JSON files.
-
+ 
 ```
 ◈ SPAYLATER 
   Manager
